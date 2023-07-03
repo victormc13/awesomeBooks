@@ -10,6 +10,12 @@ function addBook(title, author) {
   return books;
 }
 
+function removeBook(index) {
+  const storedData = JSON.parse(localStorage.getItem('bookArray'));
+  const removeBook = storedData.filter(book => book.title === index);
+  removeBook.splice(index, 1);
+}
+
 function storeBookLocally(bookArray) {
   window.localStorage.setItem('bookArray', JSON.stringify(bookArray));
 }
@@ -26,6 +32,12 @@ addBtn.addEventListener('click', function(){
   authorField.value = '';
 });
 
-
-
+const items = document.querySelectorAll('.book-item');
+items.forEach((item, index) => {
+  item.addEventListener('click', function(){
+    removeBook(index);
+    storeBookLocally(books);
+    item.remove();
+  })
+});
 
