@@ -190,11 +190,11 @@ Example:
 - Twitter: [@VctorMC20](https://twitter.com/VctorMC20)
 - LinkedIn: [Victor MC](https://www.linkedin.com/in/victormc13/)
   
-👤 **Your name**
+👤 **Bruno Kambere**
 
-- GitHub: [@victormc13](https://github.com/victormc13)
-- Twitter: [@VctorMC20](https://twitter.com/VctorMC20)
-- LinkedIn: [Victor MC](https://www.linkedin.com/in/victormc13/)
+- GitHub: [@kambereBr](https://github.com/kambereBr)
+- Twitter: [@kambereBr](https://twitter.com/kambereBr)
+- LinkedIn: [bruno kambere](https://www.linkedin.com/in/bruno-kambere-399447138/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
