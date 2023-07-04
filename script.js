@@ -26,7 +26,7 @@ class Book {
         const div = document.createElement('div');
         div.classList.add('item-container');
         const span = document.createElement('span');
-        span.innerHTML = "by";
+        span.innerHTML = 'by';
         const titleParagraph = document.createElement('p');
         titleParagraph.innerHTML = `"${item.title}"`;
         const authorParagraph = document.createElement('p');

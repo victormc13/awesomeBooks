@@ -18,6 +18,11 @@ form input,
   padding: 0.2rem;
 }
 
+form input {
+  height: 30px;
+  width: 300px;
+}
+
 .add-btn {
   background-color: green;
   color: white;
@@ -26,6 +31,9 @@ form input,
   border-radius: 0.2rem;
   padding: 0.2rem;
   cursor: pointer;
+  width: 100px;
+  height: 30px;
+  float: right;
 }
 
 .book-item-wrapper {
@@ -34,13 +42,13 @@ form input,
   padding: 1rem;
 }
 
-.book-item-wrapper article:nth-child(odd) {
-  background-color: #c4c4c4;
-}
-
 article {
   padding-bottom: 0.7rem;
   padding-top: 0.7rem;
+}
+
+.book-item-wrapper article:nth-child(odd) {
+  background-color: #c4c4c4;
 }
 
 h1 {
