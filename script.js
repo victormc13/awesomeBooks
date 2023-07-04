@@ -47,6 +47,15 @@ class Book {
     }
   }
 
+  addBook() {
+    if (JSON.parse(localStorage.getItem('bookArray'))) {
+      this.books = JSON.parse(localStorage.getItem('bookArray'));
+    }
+    this.books.push({ id: this.id, title: this.title, author: this.author });
+    this.storeBookLocally(this.books);
+    this.displayItems();
+  }
+
   /* eslint-disable no-use-before-define */
   removeBook(id) {
     this.books = this.books.filter((el) => el.id !== id);
@@ -57,3 +66,17 @@ class Book {
   /* eslint-disable no-use-before-define */
 }
 
+const addBtn = document.getElementById('add-btn');
+const titleField = document.getElementById('title');
+const authorField = document.getElementById('author');
+
+addBtn.addEventListener('click', () => {
+  if (titleField.value !== '' && authorField.value !== '') {
+    const newBook = new Book(titleField.value, authorField.value);
+    newBook.addBook();
+    titleField.value = '';
+    authorField.value = '';
+  }
+});
+
+window.addEventListener('load', new Book().displayItems());
