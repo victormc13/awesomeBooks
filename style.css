@@ -18,14 +18,57 @@ form input,
   padding: 0.2rem;
 }
 
-.book-item-wrapper {
-  width: 70%;
+.add-btn {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.2rem;
+  cursor: pointer;
 }
 
-.remove-btn {
-  margin-bottom: 0.5rem;
+.book-item-wrapper {
+  border: 2px solid black;
+  width: 70%;
+  padding: 1rem;
+}
+
+.book-item-wrapper article:nth-child(odd) {
+  background-color: #c4c4c4;
+}
+
+article {
+  padding-bottom: 0.7rem;
+  padding-top: 0.7rem;
+}
+
+h1 {
+  font-size: 3rem;
 }
 
 p {
   margin-bottom: 0.5rem;
+}
+
+.book-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  width: 90%;
+}
+
+.remove-btn {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.2rem;
+  cursor: pointer;
 }

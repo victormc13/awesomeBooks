@@ -23,8 +23,12 @@ class Book {
       this.books.forEach((item) => {
         const articleContainer = document.createElement('article');
         articleContainer.classList.add('book-item');
+        const div = document.createElement('div');
+        div.classList.add('item-container');
+        const span = document.createElement('span');
+        span.innerHTML = "by";
         const titleParagraph = document.createElement('p');
-        titleParagraph.innerHTML = item.title;
+        titleParagraph.innerHTML = `"${item.title}"`;
         const authorParagraph = document.createElement('p');
         authorParagraph.innerHTML = item.author;
         const separator = document.createElement('hr');
@@ -37,8 +41,10 @@ class Book {
           this.removeBook(item.id);
         });
 
-        articleContainer.appendChild(titleParagraph);
-        articleContainer.appendChild(authorParagraph);
+        div.appendChild(titleParagraph);
+        div.appendChild(span);
+        div.appendChild(authorParagraph);
+        articleContainer.appendChild(div);
         articleContainer.appendChild(removeBtn);
         articleContainer.appendChild(separator);
 
