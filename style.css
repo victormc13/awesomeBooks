@@ -12,7 +12,8 @@ main {
   padding: 1rem;
 }
 
-form input, .add-btn {
+form input,
+.add-btn {
   margin: 0.7rem;
   padding: 0.2rem;
 }
