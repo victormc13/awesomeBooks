@@ -92,7 +92,6 @@ window.addEventListener('load', new Book().displayItems());
 
 /* SPA manipulation section */
 function loadContent(id) {
-
   const bookList = document.querySelector('.book-item-wrapper');
   const bookCreation = document.querySelector('.addbook-section');
   const contact = document.querySelector('.contact-section');
@@ -100,7 +99,6 @@ function loadContent(id) {
   const listMenu = document.getElementById('list-menu');
   const addMenu = document.getElementById('add-menu');
   const contactMenu = document.getElementById('contact-menu');
-
 
   if (id === 'list-menu') {
     bookList.style.display = 'block';
@@ -137,16 +135,15 @@ setInterval(myTimer, 1000);
 
 function myTimer() {
   const date = new Date().toUTCString();
-  document.querySelector(".date").innerHTML = date;
+  document.querySelector('.date').innerHTML = date;
 }
 
-
-listMenu.addEventListener('click', function(){
+listMenu.addEventListener('click', () => {
   loadContent('list-menu');
 });
-addMenu.addEventListener('click', function(){
+addMenu.addEventListener('click', () => {
   loadContent('add-menu');
 });
-contactMenu.addEventListener('click', function(){
+contactMenu.addEventListener('click', () => {
   loadContent('contact-menu');
 });

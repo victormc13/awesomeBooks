@@ -12,6 +12,7 @@ header {
   display: flex;
   flex-direction: column;
 }
+
 /* Nav-bar style */
 .nav-bar {
   display: flex;
@@ -28,16 +29,16 @@ header {
   font-weight: bold;
 }
 
+.nav-bar-menu ul li {
+  list-style: none;
+  margin-left: 10px;
+}
+
 .nav-bar-menu li:nth-child(2) {
   border-right: 2px solid black;
   border-left: 2px solid black;
   padding-left: 5px;
   padding-right: 5px;
-}
-
-.nav-bar-menu ul li {
-  list-style: none;
-  margin-left: 10px;
 }
 
 .nav-bar-menu ul li :hover {
@@ -49,6 +50,7 @@ a {
   text-decoration: none;
   color: black;
 }
+
 .active {
   color: green;
   font-weight: bold;
@@ -172,7 +174,8 @@ p {
   padding-left: 2rem;
 }
 
-.addbook-section, .contact-section {
+.addbook-section,
+.contact-section {
   display: none;
 }
 
@@ -189,5 +192,5 @@ footer p {
   margin: 0;
   font-size: 1.2rem;
   font-weight: bold;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
