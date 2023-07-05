@@ -20,14 +20,14 @@
   font-weight: bold;
 }
 
-li:nth-child(2) {
+.nav-bar-menu li:nth-child(2) {
   border-right: 2px solid black;
   border-left: 2px solid black;
   padding-left: 5px;
   padding-right: 5px;
 }
 
-li {
+.nav-bar-menu ul li {
   list-style: none;
   margin-left: 10px;
 }
@@ -37,7 +37,7 @@ a {
   color: black;
 }
 
-ul {
+.nav-bar-menu ul {
   display: flex;
 }
 
@@ -58,6 +58,15 @@ main {
   justify-content: center;
   align-items: center;
   padding: 1rem;
+}
+
+.addbook-section {
+  margin-top: 2rem;
+}
+
+.subtitle-addbook {
+  text-align: center;
+  font-size: 2rem;
 }
 
 form input,
@@ -127,4 +136,27 @@ p {
   border-radius: 0.2rem;
   padding: 0.2rem;
   cursor: pointer;
+}
+
+.contact-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-section ul {
+  padding-left: 2rem;
+}
+
+footer {
+  border: 2px solid black;
+  padding: 1.5rem;
+  width: 98%;
+  margin: 0 auto;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
