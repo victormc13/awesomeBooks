@@ -8,6 +8,10 @@ body {
   height: 100vh;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+}
 /* Nav-bar style */
 .nav-bar {
   display: flex;
@@ -45,6 +49,11 @@ a {
   text-decoration: none;
   color: black;
 }
+.active {
+  color: green;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
 
 .nav-bar-menu ul {
   display: flex;
@@ -59,6 +68,8 @@ a {
 
 .date {
   float: right;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 main {
@@ -67,6 +78,7 @@ main {
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  height: 80%;
 }
 
 .addbook-section {
@@ -105,7 +117,9 @@ form input {
 .book-item-wrapper {
   border: 2px solid black;
   width: 70%;
+  height: 70%;
   padding: 1rem;
+  overflow-y: scroll;
 }
 
 article {
