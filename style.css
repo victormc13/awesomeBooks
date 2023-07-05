@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  height: 100vh;
+}
+
 /* Nav-bar style */
 .nav-bar {
   display: flex;
@@ -30,6 +34,11 @@
 .nav-bar-menu ul li {
   list-style: none;
   margin-left: 10px;
+}
+
+.nav-bar-menu ul li :hover {
+  font-weight: bold;
+  color: green;
 }
 
 a {
@@ -110,6 +119,7 @@ article {
 
 h1 {
   font-size: 3rem;
+  text-align: center;
 }
 
 p {
@@ -148,15 +158,22 @@ p {
   padding-left: 2rem;
 }
 
+.addbook-section, .contact-section {
+  display: none;
+}
+
 footer {
   border: 2px solid black;
   padding: 1.5rem;
   width: 98%;
-  margin: 0 auto;
+  position: fixed;
+  bottom: 0;
+  margin-left: 1%;
 }
 
 footer p {
   margin: 0;
   font-size: 1.2rem;
   font-weight: bold;
+  margin-bottom: 0px;
 }
